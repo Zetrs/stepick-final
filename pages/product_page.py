@@ -10,7 +10,7 @@ class ProductPage(BasePage):
 
   def should_add2basket_chk(self):
     self.should_add2basket()
-    self.solve_quiz_and_get_code()
+    #self.solve_quiz_and_get_code()
     name=self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
     price=self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
     basket_sum=self.browser.find_element(*ProductPageLocators.BASKET_SUM).text
