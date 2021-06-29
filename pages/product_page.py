@@ -20,14 +20,11 @@ class ProductPage(BasePage):
   
   def should_not_be_success_message_after_adding_product_to_basket(self):
     self.should_add2basket()
-    self.solve_quiz_and_get_code()
+    #self.solve_quiz_and_get_code()
     assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented after added to cart, but should not be"
   def should_not_be_success_message(self):
     assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but should not be"
   def success_message_disappeared_after_adding_product_to_basket(self):
     self.should_add2basket()
-    self.solve_quiz_and_get_code()
+    #self.solve_quiz_and_get_code()
     assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but should not be"
-
-  
-    

@@ -1,6 +1,6 @@
+import math
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-import math
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -61,3 +61,4 @@ class BasePage():
     except TimeoutException:
       return False
     return True
+    
